@@ -1,5 +1,6 @@
-<div class="container" #container infiniteScroll (scrolled)="onScrollDown()">
-  <div>
+<div class="container" #container infiniteScroll [infiniteScrollDistance]="2"
+[infiniteScrollThrottle]="50" (scrolled)="onScrollDown()">
+  <div class="image">
       <img width="700" alt="image" src="./assets/your-open.jpg"> Idea Summary
   </div>
   <div class="">
